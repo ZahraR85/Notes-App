@@ -6,9 +6,15 @@ const Register = () => {
 
   const handleRegister = () => {
     const users = JSON.parse(localStorage.getItem('users')) || [];
-    const newUser = { username, password };
-    localStorage.setItem('users', JSON.stringify([...users, newUser]));
-    alert('Registration successful');
+    const hashedPassword = btoa(password); // Basic encoding for demonstration
+    const newUser = { username, password: hashedPassword };
+
+    if (users.some(u => u.username === username)) {
+      alert('Username already exists');
+    } else {
+      localStorage.setItem('users', JSON.stringify([...users, newUser]));
+      alert('Registration successful');
+    }
   };
 
   return (

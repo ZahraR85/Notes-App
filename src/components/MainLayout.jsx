@@ -1,14 +1,16 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Hero from "./Hero";
 import { Outlet } from "react-router-dom";
 
-const MainLayout = () => {
+const MainLayout = ({token}) => {
   return (
     <>
       <Navbar /> 
-      <div className="container mx-auto">
+      <Hero token ={token}/>
+      <main>
         <Outlet /> 
-      </div>
+        </main>
       <Footer />
     </>
   );
