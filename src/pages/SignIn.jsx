@@ -6,13 +6,14 @@ const SignIn = () => {
 
   const handleSignIn = () => {
     const users = JSON.parse(localStorage.getItem('users')) || [];
+    const hashedPassword = btoa(password); // Basic encoding for demonstration
     const user = users.find(
-      u => u.username === username && u.password === password
+      u => u.username === username && u.password === hashedPassword
     );
 
     if (user) {
       alert('Sign in successful');
-      localStorage.setItem('currentUser', JSON.stringify(user));
+      localStorage.setItem('currentUser', JSON.stringify(user)); // Store logged-in user
     } else {
       alert('Invalid credentials');
     }
