@@ -54,7 +54,7 @@ const SingleDiaryDetail = () => {
             <p className="mb-8">{entry.content}</p>
             <div className="flex space-x-4">
             <button className="bg-green-800 text-white py-2 px-12 text-lg rounded mt-10 mr-4"
-              onClick={() => navigate('./DiaryList.jsx')}>Close</button>
+              onClick={() => navigate('/diary-list')}>Close</button>
             <button className="bg-green-800 text-white py-2 px-12 text-lg rounded mt-10"
               onClick={() => setIsEditing(true)}>Edit</button>
             </div>
