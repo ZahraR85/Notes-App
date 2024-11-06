@@ -1,12 +1,13 @@
-
-
+import Hero from "../components/Hero";
+import { Outlet } from "react-router-dom";
 const Home = () => {
-
-
   return (
-    <div>
-
-    </div>
+    <>
+      <Hero />
+      <main>
+        <Outlet /> 
+        </main>
+    </>
   );
 };
 
