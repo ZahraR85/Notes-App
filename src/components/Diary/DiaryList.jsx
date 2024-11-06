@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-//import Hero from './Hero'; 
 const DiaryList = () => {
   const [entries, setEntries] = useState([]);
   useEffect(() => {
@@ -22,9 +21,8 @@ const DiaryList = () => {
   };
   return (
     <div className="bg-customBg">
-    {/*<Hero />*/}
     <div className="container mx-auto p-4">
-      <Link to="./AddNewDiary.jsx">
+      <Link to="/diary-list/new">
         <button className="bg-green-800 text-white py-2 px-4 rounded">Add New Diary</button>
       </Link>
       <div className="grid grid-cols-5 gap-5 mt-6 ">
@@ -33,7 +31,7 @@ const DiaryList = () => {
             <button onClick={() => handleDelete(entry.id)}
               className="absolute bottom-1 right-1"
             ><i className="fa-solid fa-trash text-2xl"></i></button>
-            <Link to={`/entry/${entry.id}`}>
+            <Link to={`/diary-list/${entry.id}`}>
               <img src={entry.imageUrl} alt={entry.title} className="w-full h-60 p-4"/>
               <div className="p-2">
                 <h2 className="text-lg font-semibold p-2">{entry.title}</h2>

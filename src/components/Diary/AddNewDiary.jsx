@@ -23,7 +23,7 @@ const AddNewDiary = () => {
     const existingEntries = JSON.parse(localStorage.getItem('entries')) || [];
     const updatedEntries = [...existingEntries, newEntry];
     localStorage.setItem('entries', JSON.stringify(updatedEntries));
-    navigate('/DiaryList.jsx');
+    navigate('/diary-list');
   };
   return (
     <div className="flex justify-center items-start pt-20 min-h-screen bg-customBg">

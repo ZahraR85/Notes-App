@@ -21,12 +21,13 @@ const notesReducer = (state, action) => {
 export const NotesProvider = ({ children }) => {
   const [notes, dispatch] = useReducer(notesReducer, [], () => {
     const localData = localStorage.getItem('notes');
-    return localData ? JSON.parse(localData) : [];
+    const parsedData = localData ? JSON.parse(localData) : [];
+    // Filter out notes without an id
+    return parsedData.filter(note => note.id);
   });
-
   useEffect(() => {
     localStorage.setItem('notes', JSON.stringify(notes));
-  }, [notes]);
+  }, [notes]);  
 
   // Define addNote with unique ID generation
   const addNote = (note) => {
