@@ -42,7 +42,7 @@ const NewNoteForm = () => {
             ></textarea>
           </div>
           <button type="submit" className="bg-green-800 text-white py-2 text-lg rounded w-full">
-            Add Note
+            Submit
           </button>
         </form>
       </div>
