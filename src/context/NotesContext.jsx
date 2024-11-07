@@ -1,4 +1,3 @@
-// NotesContext.jsx
 import { createContext, useReducer, useEffect } from 'react';
 
 export const NotesContext = createContext();
