@@ -27,7 +27,8 @@ const DiaryList = () => {
       </Link>
       <div className="grid grid-cols-5 gap-5 mt-6 ">
         {entries.map((entry) => (
-          <div key={entry.id} className=" bg-customBg1 relative border w-64 h-90 rounded overflow-hidden shadow-lg transform transition-transform duration-300 ease-in-out hover:scale-105">
+          <div key={entry.id} className=" bg-customBg1 relative border w-64 h-90 rounded overflow-hidden shadow-lg 
+          transform transition-transform duration-300 ease-in-out hover:scale-105">
             <button onClick={() => handleDelete(entry.id)}
               className="absolute bottom-1 right-1"
             ><i className="fa-solid fa-trash text-2xl"></i></button>

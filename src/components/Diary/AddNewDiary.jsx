@@ -28,7 +28,7 @@ const AddNewDiary = () => {
   return (
     <div className="flex justify-center items-start pt-20 min-h-screen bg-customBg">
       <div className="max-w-5xl w-4/5 p-8 bg-customBg1 shadow-lg rounded-lg">
-        <h1 className="text-2xl font-bold mb-4 text-center">Add New Entry</h1>
+        <h1 className="text-2xl font-bold mb-4 text-center">Add New Diary</h1>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
             type="text"

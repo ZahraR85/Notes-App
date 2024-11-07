@@ -13,6 +13,9 @@ const NoteForm = () => {
 
   // Initialize state with existing note data if available
   const [title, setTitle] = useState(existingNote ? existingNote.title : '');
+  const [author, setAuthor] = useState(existingNote ? existingNote.author : '');
+  const [date, setDate] = useState(existingNote ? existingNote.date : '');
+  const [imageUrl, setImageUrl] = useState(existingNote ? existingNote.imageUrl :'');
   const [content, setContent] = useState(existingNote ? existingNote.content : '');
 
   useEffect(() => {
@@ -38,6 +41,28 @@ const NoteForm = () => {
           placeholder="Title"
           className="w-full border p-2 rounded"
           required
+        />
+        <input
+          type="text"
+          value={author}
+          onChange={(e) => setAuthor(e.target.value)}
+          placeholder="Author"
+          className="w-full border p-2 rounded"
+          required
+        />
+        <input
+          type="date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+          className="block w-full p-2 border border-gray-300 rounded"
+          required
+        />
+          <input
+          type="text"
+          placeholder="Image URL"
+          value={imageUrl}
+          onChange={(e) => setImageUrl(e.target.value)}
+          className="block w-full p-2 border border-gray-300 rounded"
         />
         <textarea
           value={content}

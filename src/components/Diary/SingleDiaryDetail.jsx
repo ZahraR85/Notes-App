@@ -53,9 +53,9 @@ const SingleDiaryDetail = () => {
             <p className="text-gray-500 text-lg mb-4">{entry.date}</p>
             <p className="mb-8">{entry.content}</p>
             <div className="flex space-x-4">
-            <button className="bg-green-800 text-white py-2 px-12 text-lg rounded mt-10 mr-4"
+            <button className="bg-green-800 text-white py-2 px-16 text-lg rounded mt-10 mr-4"
               onClick={() => navigate('/diary-list')}>Close</button>
-            <button className="bg-green-800 text-white py-2 px-12 text-lg rounded mt-10"
+            <button className="bg-green-800 text-white py-2 px-16 text-lg rounded mt-10"
               onClick={() => setIsEditing(true)}>Edit</button>
             </div>
           </div>
