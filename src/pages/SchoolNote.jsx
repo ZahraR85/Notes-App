@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 import NoteList from '../components/NoteList';
-import NoteForm from '../components/NoteForm';
 import NoteItem from '../components/NoteItem';
 
 const SchoolNote = () => {
@@ -11,13 +10,9 @@ const SchoolNote = () => {
         {/* Route for displaying all notes in card format */}
         <Route path="/" element={<NoteList />} />
 
-        {/* Route for adding a new note */}
-        <Route path="/new" element={<NoteForm />} />
-
         {/* Route for viewing a single note with edit/delete options */}
         <Route path="/:noteId" element={<NoteItem />} />
 
-        <Route path="/edit/:noteId" element={<NoteForm />} />
       </Routes>
     </div>
   );
