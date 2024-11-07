@@ -27,7 +27,7 @@ const Hero = ({ token }) => {
             <h2 className="text-3xl">Welcome back!</h2>
           ) : (
             <Link to="/login" className="btn btn-primary text-xl">
-              <button className="bg-green-800 text-white p-2 text-lg rounded "> Get Started</button>
+              <button className="bg-customBgGreen text-white p-2 text-lg rounded "> Get Started</button>
             </Link>
           )}
         </div>

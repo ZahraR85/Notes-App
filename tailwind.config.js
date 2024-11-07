@@ -4,15 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        customBg: "#fcf4e6", 
-        customBg1: "#f4e5cb",
-        
+        customBg: "#e6f4df", 
+        customBg1: "#f7eed6",
+        customBgGreen: "#62865a",
       },
       backgroundImage: {
-        'custom-gradient': 'linear-gradient(90deg, rgba(5,75,28,1) 0%, rgba(59,131,86,1) 100%)',
+        'custom-gradient': 'linear-gradient(90deg, rgba(118,154,110) 0%, rgba(31,66,32) 100%)',
       },
     },
   },
   plugins: [],
 }
 
+//#f4e5cb     #fcf4e6 

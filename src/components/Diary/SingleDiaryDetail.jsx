@@ -40,7 +40,7 @@ const SingleDiaryDetail = () => {
                 onChange={(e) => setImageUrl(e.target.value)} className="block w-full p-2 border border-gray-300 rounded"/>
               <textarea placeholder="Content"value={content} onChange={(e) => setContent(e.target.value)}
                 rows="8" className="block w-full p-2 border border-gray-300 rounded"></textarea>
-              <button type="submit" className="bg-green-800 text-white py-2 text-lg rounded w-full">Update</button>
+              <button type="submit" className="bg-customBgGreen text-white py-2 text-lg rounded w-full">Update</button>
             </form>
           </>
         ) : (
@@ -53,9 +53,9 @@ const SingleDiaryDetail = () => {
             <p className="text-gray-500 text-lg mb-4">{entry.date}</p>
             <p className="mb-8">{entry.content}</p>
             <div className="flex space-x-4">
-            <button className="bg-green-800 text-white py-2 px-16 text-lg rounded mt-10 mr-4"
-              onClick={() => navigate('/diary-list')}>Close</button>
-            <button className="bg-green-800 text-white py-2 px-16 text-lg rounded mt-10"
+            <button className="bg-customBgGreen text-white py-2 px-16 text-lg rounded mt-10 mr-4"
+              onClick={() => navigate('/diary-list')}>back</button>
+            <button className="bg-customBgGreen text-white py-2 px-16 text-lg rounded mt-10"
               onClick={() => setIsEditing(true)}>Edit</button>
             </div>
           </div>

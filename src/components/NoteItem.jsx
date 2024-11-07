@@ -95,17 +95,17 @@ const NoteItem = () => {
               <div className="flex space-x-4 text-center">
                 <button
                   onClick={handleDelete}
-                  className="bg-green-800 text-white py-2 px-16 text-lg rounded mt-10"
+                  className="bg-customBgGreen text-white py-2 px-16 text-lg rounded mt-10"
                 > Delete
                 </button>
                 <button
                   onClick={() => setIsEditing(true)}
-                  className="bg-green-800 text-white py-2 px-16 text-lg rounded mt-10"
+                  className="bg-customBgGreen text-white py-2 px-16 text-lg rounded mt-10"
                 > Edit
                 </button>
                 <button
                   onClick={() => navigate('/school-notes')}
-                  className="bg-green-800 text-white py-2 px-16 text-lg rounded mt-10"
+                  className="bg-customBgGreen text-white py-2 px-16 text-lg rounded mt-10"
                 > Back
                 </button>
               </div>

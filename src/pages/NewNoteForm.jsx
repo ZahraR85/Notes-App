@@ -82,7 +82,7 @@ const NewNoteForm = () => {
             rows="8"
             required
           ></textarea>
-          <button type="submit" className="bg-green-800 text-white py-2 text-lg rounded w-full">
+          <button type="submit" className="bg-customBgGreen text-white py-2 text-lg rounded w-full">
             Submit
           </button>
         </form>

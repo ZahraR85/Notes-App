@@ -72,7 +72,7 @@ const NoteForm = () => {
           rows="5"
           required
         ></textarea>
-        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
+        <button type="submit" className="bg-customBgGreen text-white px-4 py-2 rounded">
           Save Changes
         </button>
       </form>

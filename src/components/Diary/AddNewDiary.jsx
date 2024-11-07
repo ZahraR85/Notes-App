@@ -57,7 +57,7 @@ const AddNewDiary = () => {
             rows="8"
             className="block w-full p-2 border border-gray-300 rounded"
           ></textarea>
-          <button type="submit" className="bg-green-800 text-white py-2 text-lg rounded w-full">
+          <button type="submit" className="bg-customBgGreen text-white py-2 text-lg rounded w-full">
             Submit
           </button>
         </form>

@@ -19,7 +19,7 @@ const NoteList = () => {
             >
               <Link
                 to={`/school-notes/${note.id}`}
-                className="text-green-600 mt-2 inline-block"
+                className="text-green-800 mt-2 inline-block"
               >
                 <img src={note.imageUrl} alt={note.title} className="w-full h-60 p-4"/>
                 <div className='p-2 text-center'>
