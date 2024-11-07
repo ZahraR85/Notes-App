@@ -37,7 +37,7 @@ const SignIn = () => {
         onChange={e => setPassword(e.target.value)}
         className="block w-full p-2 border border-gray-300 rounded"
       />
-      <button onClick={handleSignIn} className="bg-green-800 text-white py-2 text-lg rounded w-full">Sign In</button>
+      <button onClick={handleSignIn} className="bg-customBgGreen text-white py-2 text-lg rounded w-full">Sign In</button>
     </div>
     </div>
   );

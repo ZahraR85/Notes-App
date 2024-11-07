@@ -35,7 +35,7 @@ const Register = () => {
         onChange={e => setPassword(e.target.value)}
         className="block w-full p-2 border border-gray-300 rounded"
       />
-      <button onClick={handleRegister} className="bg-green-800 text-white py-2 text-lg rounded w-full">Register</button>
+      <button onClick={handleRegister} className="bg-customBgGreen text-white py-2 text-lg rounded w-full">Register</button>
     </div>
     </div>
   );

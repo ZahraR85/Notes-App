@@ -3,7 +3,7 @@ import MainLayout from './components/MainLayout';
 import Home from './pages/Home';
 import NewNoteForm from './pages/NewNoteForm';
 import NoteItem from './components/NoteItem';
-import NoteForm from './components/NoteForm';
+
 import NoteList from './components/NoteList';
 import DiaryList from './components/Diary/DiaryList';
 import AddNewDiary from './components/Diary/AddNewDiary';
@@ -26,7 +26,7 @@ const App = () => {
             <Route path="/school-notes" element={<NoteList />} />
             <Route path="/school-notes/new" element={<NewNoteForm />} />
             <Route path="/school-notes/:noteId" element={<NoteItem />} />
-            <Route path="/school-notes/edit/:noteId" element={<NoteForm />} />
+
             <Route path="/register" element={<Register />} />
             <Route path="/signin" element={<SignIn />} />
           </Route>
