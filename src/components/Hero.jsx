@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-
+import { Link , useNavigate} from "react-router-dom";
 const Hero = ({ token }) => {
+  const navigate = useNavigate();
   return (
     <div
       className="hero"
@@ -26,9 +26,10 @@ const Hero = ({ token }) => {
           {token ? (
             <h2 className="text-3xl">Welcome back!</h2>
           ) : (
-            <Link to="/login" className="btn btn-primary text-xl">
-              <button className="bg-customBgGreen text-white p-2 text-lg rounded "> Get Started</button>
-            </Link>
+           // <Link to="/signin" className="btn btn-primary text-xl">
+              <button  onClick={() => navigate('/signin')} className="bg-customBgGreen text-white p-2 text-lg rounded "> 
+              Get Started</button>
+           // </Link>
           )}
         </div>
       </div>
