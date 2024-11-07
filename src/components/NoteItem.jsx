@@ -76,7 +76,7 @@ const NoteItem = () => {
               ></textarea>
               <button
                 type="submit"
-                className="bg-green-800 text-white py-2 text-lg rounded w-full"
+                className="bg-customBgGreen text-white py-2 text-lg rounded w-full"
               >
                 Update
               </button>
