@@ -15,7 +15,7 @@ const NoteList = () => {
   }, [notes]);
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 mb-16">
       <h2 className="text-2xl font-bold mb-4">All Notes</h2>
       <div className="grid grid-cols-5 gap-5 mt-6">
         {sortedNotes && sortedNotes.length > 0 ? (
