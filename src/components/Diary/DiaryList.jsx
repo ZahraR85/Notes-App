@@ -20,8 +20,8 @@ const DiaryList = () => {
     }
   };
   return (
-    //<div className="bg-customBg">
-    <div className="container mx-auto p-4">
+    //<div className="bg-customBg ">
+    <div className="container mx-auto p-4 mb-16">
       <Link to="/diary-list/new">
         <button className="bg-customBgGreen text-white py-2 px-4 rounded">Add New Diary</button>
       </Link>
@@ -43,7 +43,7 @@ const DiaryList = () => {
         ))}
       </div>
     </div>
- // </div>
+  //</div>
   );
 };
 export default DiaryList;
